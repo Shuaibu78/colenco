@@ -2,17 +2,24 @@
   "name": "colenco",
   "version": "0.0.1",
   "description": "",
+  "source": "index.html",
   "keywords": "",
   "license": "",
-  "author": "",
+ "author": "Shuaibu muhammad",
   "scripts": {
-    "build": "parcel build index.html",
+    "build": "parcel build",
     "dev": "parcel index.html --open",
     "start": "npm run build && npm run dev",
     "tail": "npx tailwindcss -i ./css/input.css -o ./dist/output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.5.0",
+    "@parcel/transformer-webmanifest": "^2.5.0",
+    "autoprefixer": "^10.2.1",
+    "cssnano": "^5.0.8",
+    "parcel": "^2.0.0",
+    "postcss-cli": "^8.0.0",
     "parcel-bundler": "^1.12.4",
     "tailwindcss": "^3.3.3"
   }
