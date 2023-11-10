@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <meta name="theme-color" content="#fafafa" />
+    <style>
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-20px);
+        }
+        60% {
+          transform: translateY(-10px);
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#f6f6f6] font-poppins">
+    <nav
+      class="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-200"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="./index.html" class="flex items-center">
+          <img src="./assets/logo colenco.png" class="h-8 mr-3" alt="Colenco" />
+          >
+        </a>
+        <div class="flex lg:hidden md:order-2">
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-white dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="./index.html"
+                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./aboutus.html"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-[#585858] dark:hover:bg-gray-700 dark:hover:text-[#585858] md:dark:hover:bg-transparent dark:border-gray-700"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="./projects.html"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-[#585858] dark:hover:bg-gray-700 dark:hover:text-[#585858] md:dark:hover:bg-transparent dark:border-gray-700"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="./gallery.html"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-[#585858] dark:hover:bg-gray-700 dark:hover:text-[#585858] md:dark:hover:bg-transparent dark:border-gray-700"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a
+                href="./quality.html"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-[#585858] dark:hover:bg-gray-700 dark:hover:text-[#585858] md:dark:hover:bg-transparent dark:border-gray-700"
+                >Certifications</a
+              >
+            </li>
+            <li>
+              <a
+                href="./contact.html"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-[#585858] dark:hover:bg-gray-700 dark:hover:text-[#585858] md:dark:hover:bg-transparent dark:border-gray-700"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="w-full m-0 p-0">
+      <figure class="relative w-full cursor-pointer">
+        <img
+          class="h-[780px] w-full brightness-75"
+          src="./assets/grid.jpg"
+          alt="image description"
+        />
+        <figcaption
+          class="absolute top-[0%] left-[15%] px-4 text-lg text-white bottom-6 flex flex-col justify-center items-center"
+        >
+          <h1
+            class="mb-4 text-4xl font-extrabold leading-none tracking-widest text-gray-900 md:text-6xl lg:text-8xl dark:text-white font-poppins"
+          >
+            WELCOME
+          </h1>
+          <p
+            class="mb-6 text-lg font-normal tracking-widest text-white lg:text-xl sm:px-16 xl:px-0 dark:text-white w-1/2 text-center font-poppins"
+          >
+            WE ARE CERTIFIED ENGINEERS PROVIDING CREATIVE AND PROFESSIONAL
+            SERVICES.
+          </p>
+          <a
+            href="/aboutus.html"
+            class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 font-poppins"
+          >
+            WHO WE ARE
+            <svg
+              class="w-3.5 h-3.5 ml-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </a>
+        </figcaption>
+        <div
+          class="absolute w-full h-16 bottom-0 dark:focus:ring-blue-900 bg-blue-700 text-white px-[9rem] flex items-center justify-between"
+        >
+          <h6>Contractors and Construction Managers since 2001</h6>
+          <a
+            href="/contact.html"
+            class="text-white hover:text-white border border-white dark:border-white dark:text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-800 hover:border-blue-700 dark:hover:text-white dark:hover:bg-blue-800 dark:hover:border-blue-800 dark:focus:ring-blue-800"
+          >
+            <button type="button" class="">GET A QUOTE</button>
+          </a>
+        </div>
+      </figure>
+    </section>
+
+    <section class="w-full m-0 p-0 bg-white">
+      <div
+        class="container mx-auto flex flex-col md:flex-row p-8 md:p-16 font-poppins"
+      >
+        <!-- Left Side (Text) -->
+        <div class="md:w-1/2 md:pr-5">
+          <h2 class="text-2xl font-normal mb-4">WHO WE ARE</h2>
+          <p class="text-5xl font-bold mb-4">
+            Innovative engineering pioneers shaping energy solutions across
+            Africa
+          </p>
+          <p class="text-sm mb-8 font-normal">
+            At the heart of Colenco Consulting Ltd, we are dedicated to
+            transforming engineering landscapes into enduring solutions. Fueled
+            by creativity and precision, we engineer projects that withstand the
+            challenges of time. Our unwavering commitment to innovation propels
+            us to redefine design paradigms, ensuring each endeavor becomes a
+            distinctive masterpiece.
+          </p>
+          <a
+            href="/aboutus.html"
+            class="bg-blue-700 text-white px-6 py-4 rounded hover:bg-blue-900 transition duration-300"
+          >
+            <button>Discover More</button>
+          </a>
+        </div>
+
+        <!-- Right Side (Image and Cards) -->
+        <div class="md:w-1/2 relative mt-8 md:mt-0">
+          <img
+            src="./assets/tower.jpg"
+            alt="Architecture"
+            class="w-full h-auto object-cover mb-8 rounded-lg"
+          />
+
+          <!-- Cards -->
+          <div class="absolute bottom-0 left-0 w-full flex justify-between">
+            <!-- Card 1 -->
+            <div class="bg-white p-4 rounded-lg shadow-md text-center">
+              <h3 class="text-2xl font-bold mb-2">45+</h3>
+              <p>Project Done</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-4 rounded-lg shadow-md text-center">
+              <h3 class="text-2xl font-bold mb-2">3+</h3>
+              <p>Certifications</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-4 rounded-lg shadow-md text-center">
+              <h3 class="text-2xl font-bold mb-2">20+</h3>
+              <p>Years of Experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full m-0 p-0 px-12 mt-12">
+      <div class="container mx-auto py-12">
+        <!-- Text Section -->
+        <div class="text-center mb-8 flex justify-center items-center w-full">
+          <h2 class="text-3xl font-bold mb-4 text-center w-1/2">
+            Trusted by numerous world-class brands and organizations of all
+            sizes
+          </h2>
+        </div>
+
+        <!-- Partner Logos Section -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <!-- Partner Logo 1 -->
+          <div class="hover:animate-bounce">
+            <div
+              class="flex justify-center items-center bg-white p-4 rounded-lg shadow-md"
+            >
+              <img
+                src="./assets/clients/dangote-logo-380C6D2508-seeklogo.com.png"
+                alt="Partner Logo 1"
+                class="w-32 h-32 object-contain"
+              />
+            </div>
+          </div>
+          <!-- Partner Logo 2 -->
+          <div class="hover:animate-bounce">
+            <div
+              class="flex justify-center items-center bg-white p-4 rounded-lg shadow-md"
+            >
+              <img
+                src="./assets/clients/NNPC-Logo.jpg"
+                alt="Partner Logo 2"
+                class="w-32 h-32 object-contain"
+              />
+            </div>
+          </div>
+          <!-- Partner Logo 3 -->
+          <div class="hover:animate-bounce">
+            <div
+              class="flex justify-center items-center bg-white p-4 rounded-lg shadow-md"
+            >
+              <img
+                src="./assets/clients/KPLC-1.jpg"
+                alt="Partner Logo 3"
+                class="w-32 h-32 object-contain"
+              />
+            </div>
+          </div>
+          <!-- Partner Logo 4 -->
+          <div class="hover:animate-bounce">
+            <div
+              class="flex justify-center items-center bg-white p-4 rounded-lg shadow-md"
+            >
+              <img
+                src="./assets/clients/UETCL.jpg"
+                alt="Partner Logo 4"
+                class="w-32 h-32 object-contain"
+              />
+            </div>
+          </div>
+          <!-- Partner Logo 5 -->
+          <div class="hover:animate-bounce">
+            <div
+              class="flex justify-center items-center bg-white p-4 rounded-lg shadow-md"
+            >
+              <img
+                src="./assets/clients/af.jpg"
+                alt="Partner Logo 1"
+                class="w-32 h-32 object-contain"
+              />
+            </div>
+          </div>
+          <!-- Partner Logo 6 -->
+          <div class="hover:animate-bounce">
+            <div
+              class="flex justify-center items-center bg-white p-4 rounded-lg shadow-md"
+            >
+              <img
+                src="./assets/clients/ceet.jpg"
+                alt="Partner Logo 2"
+                class="w-32 h-32 object-contain"
+              />
+            </div>
+          </div>
+          <!-- Partner Logo 7 -->
+          <div class="hover:animate-bounce">
+            <div
+              class="flex justify-center items-center bg-white p-4 rounded-lg shadow-md"
+            >
+              <img
+                src="./assets/clients/decon.jpg"
+                alt="Partner Logo 1"
+                class="w-32 h-32 object-contain"
+              />
+            </div>
+          </div>
+          <!-- Partner Logo 8 -->
+          <div class="hover:animate-bounce">
+            <div
+              class="flex justify-center items-center bg-white p-4 rounded-lg shadow-md"
+            >
+              <img
+                src="./assets/clients/senelac.jpg"
+                alt="Partner Logo 2"
+                class="w-32 h-32 object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-center bg-no-repeat bg-cover bg-gray-700 bg-blend-multiply"
+      style="background-image: url('./assets/Taipei2.jpeg')"
+    >
+      <div
+        class="px-4 mx-auto max-w-screen-xl text-center py-10 lg:py-56 relative"
+      >
+        <h3 class="text-xl font-light mb-4 text-white">OUR VALUE</h3>
+        <h2
+          class="text-4xl mb-4 font-extrabold tracking-tight leading-none text-white md:text-5xl"
+        >
+          SUCCESSFUL PROJECTS BEGIN WITH GOOD COMMUNICATION
+        </h2>
+        <p
+          class="mb-0 text-lg font-light text-gray-300 lg:text-xl sm:px-16 lg:px-48"
+        >
+          At Colenco Consulting Ltd, we transform ideas into impactful
+          experiences through innovation and unwavering precision. Our focus on
+          effective communication fosters collaborations, ensuring enduring
+          success in engineering infrastructural wonders.
+        </p>
+        <!-- Cards -->
+        <div
+          class="absolute bottom-[-8rem] left-0 w-full flex justify-center items-center"
+        >
+          <div class="w-full flex justify-between items-start gap-8">
+            <!-- Card 1 -->
+            <div
+              class="bg-white p-4 rounded-lg shadow-md text-center flex justify-start items-center flex-col w-1/3 h-[270px]"
+            >
+              <div class="bg-[#f6f6f6] p-2 mb-2">
+                <img
+                  src="./assets/light-bulb.png"
+                  alt="Partner Logo 1"
+                  class="w-8 h-8 object-contain"
+                />
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-[#a0a0a2]">
+                Our Vision
+              </h3>
+              <p class="text-[#a0a0a2] font-medium">
+                We aim to be a major player in the energy and infrastructure
+                sectors in Africa. We have a vision to expand our operations in
+                countries such as Nigeria, Uganda, Kenya, Togo, Tanzania,
+                Guinea, Mali, and Niger. Our vision involves becoming a
+                prominent entity in these sectors across the African continent
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="bg-white p-4 rounded-lg shadow-md text-center flex justify-start items-center flex-col w-1/3 h-[270px]"
+            >
+              <div class="bg-[#f6f6f6] p-2 mb-2">
+                <img
+                  src="./assets/light-bulb.png"
+                  alt="Partner Logo 1"
+                  class="w-8 h-8 object-contain"
+                />
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-[#a0a0a2]">
+                Our Mission
+              </h3>
+              <p class="text-[#a0a0a2] font-medium">
+                Our mission is to deliver top-notch engineering services in
+                energy and infrastructure, ensuring customer market success
+                while enhancing quality of life. We leverage expertise, global
+                presence, and staff potential, emphasizing the preservation of
+                natural resources in their approach.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="bg-white p-4 rounded-lg shadow-md text-center flex justify-start items-center flex-col w-1/3 h-[270px]"
+            >
+              <div class="bg-[#f6f6f6] p-2 mb-2">
+                <img
+                  src="./assets/light-bulb.png"
+                  alt="Partner Logo 1"
+                  class="w-8 h-8 object-contain"
+                />
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-[#a0a0a2]">
+                Our Motto
+              </h3>
+              <p class="text-[#a0a0a2] font-medium">
+                Our core values include delivering high-quality engineering
+                services, independent assessments and reviews, employing highly
+                qualified personnel, and utilizing multidisciplinary
+                capabilities along with interdisciplinary working methods
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full m-0 p-0 bg-white lg:mt-44 mt-12">
+      <div
+        class="container mx-auto flex flex-col md:flex-row p-8 md:p-16 font-poppins"
+      >
+        <!-- left Side (Image and Cards) -->
+        <div class="md:w-1/2 relative mt-8 md:mt-0">
+          <img
+            src="./assets/P2.png"
+            alt="Architecture"
+            class="w-[480px] h-[500px] object-cover mb-8 rounded-lg"
+          />
+
+          <!-- Cards -->
+          <div
+            class="absolute bottom-0 left-[-2rem] w-full flex justify-between"
+          >
+            <!-- Card 1 -->
+            <div
+              class="bg-white py-4 px-2 rounded-lg shadow-md text-center w-44"
+            >
+              <h3 class="text-4xl font-extrabold mb-2 text-blue-700">22+</h3>
+              <p class="text-[12px]">YEARS OF EXPERIENCE</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side (Text) -->
+        <div class="md:w-1/2">
+          <h2 class="text-lg font-light mb-4">WHY CHOOSE US</h2>
+          <p class="text-5xl font-bold mb-4">
+            Expertise, Expansion, Prominence
+          </p>
+          <p class="text-sm mb-8 font-normal leading-7">
+            Navigating the intricacies of the energy and infrastructure sectors
+            in Africa is our forte, backed by extensive knowledge and
+            experience. We're not just a company; we're on a mission. Our vision
+            involves strategic expansion into key African countries, including
+            Nigeria, Uganda, Kenya, Togo, Tanzania, Guinea, Mali, and Niger.
+            Excellence is not a goal; it's our standard. Our mission revolves
+            around delivering top-notch engineering services in every aspect of
+            our operations. Your success is our success. We're committed to
+            contributing to our customers' market success by providing tailored
+            engineering solutions that meet their unique needs. Beyond projects,
+            we're on a mission to enhance the quality of life in the communities
+            we serve through our impactful infrastructure projects.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-white dark:bg-gray-900 mt-12">
+      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+            <a href="./index.html" class="flex items-center">
+              <img
+                src="./assets/logo colenco.png"
+                class="h-8 mr-3"
+                alt="FlowBite Logo"
+              />
+            </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                LOCATIONS
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  No. 8 Gwandu Street Area 11<br />
+                  Garki Abuja, Nigeria
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                CONSULTATION
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">+234-803-9437-969</li>
+                <li>
+                  <button
+                    type="button"
+                    class="group relative text-white border-b border-white dark:border-white dark:text-white font-medium text-sm py-1 text-center focus:ring-4 focus:outline-none focus:ring-transparent"
+                  >
+                    <span class="relative z-10 inline-flex items-center"
+                      >Get a Quote
+                      <svg
+                        class="w-3.5 h-3.5 ml-2"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 14 10"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M1 5h12m0 0L9 1m4 4L9 9"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="absolute bottom-0 left-0 h-1.5 bg-blue-700 group-hover:w-full transition-all duration-300"
+                    ></span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                GET IN TOUCH
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">info@colencoconsulting.com</li>
+                <li>
+                  <button
+                    type="button"
+                    class="group relative text-white border-b border-white dark:border-white dark:text-white font-medium text-sm py-1 text-center focus:ring-4 focus:outline-none focus:ring-transparent"
+                  >
+                    <span class="relative z-10 inline-flex items-center"
+                      >Send Email
+                      <svg
+                        class="w-3.5 h-3.5 ml-2"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 14 10"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M1 5h12m0 0L9 1m4 4L9 9"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="absolute bottom-0 left-0 h-1.5 bg-blue-700 group-hover:w-full transition-all duration-300"
+                    ></span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+            >© 2023 <a href="./index.html" class="hover:underline">Colenco™</a>.
+            All Rights Reserved.
+          </span>
+          <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+            <a
+              href="#"
+              class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 8 19"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">Facebook page</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 21 16"
+              >
+                <path
+                  d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"
+                />
+              </svg>
+              <span class="sr-only">Discord community</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 17"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">Twitter page</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">GitHub account</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">Dribbble account</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
+</html>
