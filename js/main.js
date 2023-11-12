@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const mailtoLink = `mailto:devshuaib@gmail.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(
-      `Name: ${name} Email: ${email} Subject: ${subject}%0AMessage: ${message}`
+      `Name: ${name} Email: ${email} Subject: ${subject} Message: ${message}`
     )}`;
 
     window.location.href = mailtoLink;
