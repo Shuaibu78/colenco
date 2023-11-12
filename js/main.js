@@ -84,12 +84,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-function toggleDropdown(isHovered) {
-  const dropdownNavbar = document.getElementById('dropdownNavbar');
-  if (isHovered) {
-    dropdownNavbar.classList.remove('hidden');
-  } else {
-    dropdownNavbar.classList.add('hidden');
-  }
-}

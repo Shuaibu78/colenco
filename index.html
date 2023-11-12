@@ -18,6 +18,16 @@
     <link href="/dist/output.css" rel="stylesheet" />
 
     <meta name="theme-color" content="#fafafa" />
+    <script>
+      function toggleDropdown(isHovered) {
+        const dropdownNavbar = document.getElementById("dropdownNavbar");
+        if (isHovered) {
+          dropdownNavbar.classList.remove("hidden");
+        } else {
+          dropdownNavbar.classList.add("hidden");
+        }
+      }
+    </script>
     <style>
       @keyframes bounce {
         0%,
@@ -818,10 +828,9 @@
       </div>
     </footer>
 
-    <script src="js/main.js"></script>
     <script>
       function toggleDropdown(isHovered) {
-        const dropdownNavbar = document.getElementById("dropdownNavbar");
+        var dropdownNavbar = document.getElementById("dropdownNavbar");
         if (isHovered) {
           dropdownNavbar.classList.remove("hidden");
         } else {
@@ -829,5 +838,6 @@
         }
       }
     </script>
+    <script src="/js/main.js?v=1"></script>
   </body>
 </html>
