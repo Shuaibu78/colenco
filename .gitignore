@@ -8,7 +8,6 @@ src/version.json
 
 # Build
 /backend
-/build
 /dist
 /src/images
 .vscode
