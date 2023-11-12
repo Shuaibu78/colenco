@@ -97,6 +97,14 @@ document.addEventListener("DOMContentLoaded", function () {
     toggleDropdown(false);
   });
 
+  dropdownNavbar.addEventListener("mouseenter", function () {
+    toggleDropdown(true);
+  });
+
+  dropdownNavbar.addEventListener("mouseleave", function () {
+    toggleDropdown(false);
+  });
+
   function toggleDropdown(isHovered) {
     if (isHovered) {
       dropdownNavbar.classList.remove("hidden");
