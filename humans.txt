@@ -3,7 +3,7 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    <Shuaibu Muhammad> -- <Frontend Developer> -- <twitter>
 
 # THANKS
 
@@ -11,5 +11,5 @@
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    CSS3, HTML5, PARCEL, JAVASCRIPT, LEAFLET
+    Apache Server Configs, Modernizr

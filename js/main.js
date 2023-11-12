@@ -1,4 +1,21 @@
 // navbar
+window.addEventListener("scroll", function () {
+  var navbar = document.getElementById("stickyNavbar");
+  var topNav = document.getElementById("topNav");
+
+  if (window.scrollY >= 1) {
+    navbar.classList.remove("top-[130px]");
+    navbar.classList.add("top-0");
+    topNav.classList.add("hidden");
+    topNav.classList.remove("block");
+  } else {
+    navbar.classList.remove("top-0");
+    navbar.classList.add("top-[130px]");
+    topNav.classList.add("block");
+    topNav.classList.remove("hidden");
+  }
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   const mobileMenuButton = document.querySelector('[data-collapse-toggle="navbar-sticky"]');
   const mobileMenu = document.getElementById('navbar-sticky');
@@ -27,14 +44,18 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Show the default tab content and set it as active
-  const defaultTab = tabButtons[0];
-  defaultTab.classList.remove('border-transparent');
-  defaultTab.classList.add('border-blue-800');
-  defaultTab.classList.add('text-blue-800');
-  const defaultContent = document.querySelector(`#${defaultTab.getAttribute('data-tabs-target')}`);
-  if (defaultContent) {
-    defaultContent.classList.remove('hidden');
+  if (tabButtons.length > 0) {
+    const defaultTab = tabButtons[0];
+    defaultTab.classList.remove('border-transparent');
+    defaultTab.classList.add('border-blue-800');
+    defaultTab.classList.add('text-blue-800');
+
+    const defaultContent = document.querySelector(`#${defaultTab.getAttribute('data-tabs-target')}`);
+    if (defaultContent) {
+      defaultContent.classList.remove('hidden');
+    }
   }
+
 
   // Add click event listeners to tab buttons
   tabButtons.forEach((button) => {
@@ -63,3 +84,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+function toggleDropdown(isHovered) {
+  const dropdownNavbar = document.getElementById('dropdownNavbar');
+  if (isHovered) {
+    dropdownNavbar.classList.remove('hidden');
+  } else {
+    dropdownNavbar.classList.add('hidden');
+  }
+}
