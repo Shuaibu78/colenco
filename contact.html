@@ -303,7 +303,7 @@
           ></textarea>
           <button
             type="button"
-            onclick="sendEmail()"
+            id="sendMail"
             class="bg-blue-700 hover:bg-blue-800 focus:ring-4 text-white px-4 py-4 rounded mt-6 focus:ring-blue-300 focus:outline-none dark:focus:ring-blue-800"
           >
             Send Your Message Now
@@ -540,23 +540,5 @@
     </footer>
 
     <script src="js/main.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-      function sendEmail() {
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const subject = document.getElementById("subject").value;
-        const message = document.getElementById("message").value;
-
-        const mailtoLink = `mailto:devshuaib@gmail.com?subject=${encodeURIComponent(
-          subject
-        )}&body=${encodeURIComponent(
-          `Name: ${name} Email: ${email} Subject: ${subject}%0AMessage: ${message}`
-        )}`;
-
-        window.location.href = mailtoLink;
-      }
-    </script>
   </body>
 </html>

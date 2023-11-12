@@ -114,3 +114,25 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const sendMail = document.getElementById("sendMail");
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const subject = document.getElementById("subject").value;
+  const message = document.getElementById("message").value;
+
+  sendMail.addEventListener("click", function () {
+    sendEmail();
+  });
+
+  function sendEmail() {
+    const mailtoLink = `mailto:devshuaib@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(
+      `Name: ${name} Email: ${email} Subject: ${subject}%0AMessage: ${message}`
+    )}`;
+
+    window.location.href = mailtoLink;
+  }
+});
+
