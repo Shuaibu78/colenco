@@ -85,11 +85,24 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-function toggleDropdown(isHovered) {
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdownLink = document.getElementById("dropdownLink");
   const dropdownNavbar = document.getElementById("dropdownNavbar");
-  if (isHovered === 'true') {
-    dropdownNavbar.classList.remove("hidden");
-  } else {
-    dropdownNavbar.classList.add("hidden");
+
+  dropdownLink.addEventListener("mouseenter", function () {
+    toggleDropdown(true);
+  });
+
+  dropdownLink.addEventListener("mouseleave", function () {
+    toggleDropdown(false);
+  });
+
+  function toggleDropdown(isHovered) {
+    if (isHovered) {
+      dropdownNavbar.classList.remove("hidden");
+    } else {
+      dropdownNavbar.classList.add("hidden");
+    }
   }
-}
+});
+
