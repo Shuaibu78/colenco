@@ -4,6 +4,7 @@ yarn-error.log*
 yarn-debug.log*
 src/version.json
 .yarnrc.yml
+.parcel
 
 # Build
 /backend

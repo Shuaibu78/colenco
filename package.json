@@ -10,7 +10,7 @@
     "build": "parcel build",
     "dev": "parcel index.html --open",
     "start": "npm run build && npm run dev",
-    "tail": "npx tailwindcss -i ./css/input.css -o ./dist/output.css --watch",
+    "tail": "npx tailwindcss -i ./css/input.css -o ./build/output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
