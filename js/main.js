@@ -116,16 +116,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   const sendMail = document.getElementById("sendMail");
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const subject = document.getElementById("subject").value;
-  const message = document.getElementById("message").value;
 
   sendMail.addEventListener("click", function () {
     sendEmail();
   });
 
   function sendEmail() {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
     const mailtoLink = `mailto:devshuaib@gmail.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(
@@ -133,6 +133,11 @@ document.addEventListener("DOMContentLoaded", function () {
     )}`;
 
     window.location.href = mailtoLink;
+    // Reset input fields
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("subject").value = "";
+    document.getElementById("message").value = "";
   }
 });
 
