@@ -17,6 +17,10 @@
     <link rel="apple-touch-icon" href="favicon.png" />
     <!-- Place favicon.ico in the root directory -->
 
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCgaIRh9bLSPiOFXkD9rlxoPMQdjEbI5w&callback=console.debug&libraries=maps,marker&v=beta"
+      defer
+    ></script>
     <link href="./build/output.css" rel="stylesheet" />
 
     <meta name="theme-color" content="#fafafa" />
@@ -50,6 +54,10 @@
         >
           <img src="./assets/iso.png" class="h-24" alt="cert badge Logo" />
         </a>
+        <!-- Stylish Name "Colenco" -->
+        <!-- <div class="text-5xl font-bold text-blue-500 dark:text-blue-500">
+          Colenco
+        </div> -->
         <div class="flex items-center space-x-6 rtl:space-x-reverse">
           <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
             <a
@@ -57,7 +65,7 @@
               class="text-gray-500 hover:text-gray-900 dark:hover:text-gray-900"
             >
               <svg
-                class="w-4 h-4"
+                class="w-10 h-10"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -80,7 +88,7 @@
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="bi bi-linkedin"
+                class="bi bi-linkedin w-10 h-10"
                 viewBox="0 0 16 16"
               >
                 <path
@@ -94,7 +102,7 @@
               class="text-gray-500 hover:text-gray-900 dark:hover:text-gray-900"
             >
               <svg
-                class="w-4 h-4"
+                class="w-10 h-10"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -490,6 +498,16 @@
     </section>
 
     <section
+      class="w-[100%] mb-0 flex justify-center items-center bg-black dark:bg-black mt-16 h-[180px]"
+    >
+      <h2 class="text-5xl font-bold text-white">Ongoing Projects</h2>
+    </section>
+
+    <section class="z-10 mt-8 mb-10">
+      <div id="map" style="height: 500px"></div>
+    </section>
+
+    <section
       class="bg-center bg-no-repeat bg-cover bg-gray-700 bg-blend-multiply"
       style="background-image: url('./assets/Taipei2.jpeg')"
     >
@@ -813,16 +831,86 @@
       </div>
     </footer>
 
-    <script>
-      function toggleDropdown(isHovered) {
-        var dropdownNavbar = document.getElementById("dropdownNavbar");
-        if (isHovered) {
-          dropdownNavbar.classList.remove("hidden");
-        } else {
-          dropdownNavbar.classList.add("hidden");
-        }
-      }
-    </script>
     <script src="/js/main.js?v=1"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const branches = [
+          {
+            country: "Ethiopia-Somalia",
+            location: { lat: 9.145, lng: 45.5838 },
+            projects: "400kV Interconnection Feasibility Study",
+            status: "ongoing",
+          },
+          {
+            country: "Uganda-Tanzania",
+            location: { lat: -1.9403, lng: 31.0414 },
+            projects: "400kV Interconnection Feasibility Study",
+            status: "ongoing",
+          },
+          {
+            country: "Uganda-South Sudan",
+            location: { lat: 4.8416, lng: 31.5907 },
+            projects: "400kV Interconnection Feasibility Study",
+            status: "ongoing",
+          },
+          {
+            country: "Huambo-Lubango",
+            location: { lat: -13.4958, lng: 14.2456 },
+            projects: "400kV Transmission Line Feasibility Study",
+            status: "ongoing",
+          },
+          {
+            country: "Mando-Rimin Zakara",
+            location: { lat: 12.4332, lng: 8.5606 },
+            projects: "330kV Transmission Line Supervision",
+            status: "ongoing",
+          },
+        ];
+
+        const map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: 6, lng: 10 },
+          zoom: 2,
+        });
+
+        const lines = [];
+        let currentInfoWindow = null;
+
+        branches.forEach((project) => {
+          const markerColor = project.status === "ongoing" ? "blue" : "green";
+          const circleRadius =
+            project.projects === "330kV Transmission Line Supervision"
+              ? 10
+              : project.projects === "400kV Transmission Line Feasibility Study"
+              ? 15
+              : 20;
+
+          const marker = new google.maps.Marker({
+            position: project.location,
+            icon: {
+              path: google.maps.SymbolPath.CIRCLE,
+              fillColor: markerColor,
+              fillOpacity: 0.5,
+              strokeWeight: 0,
+              scale: circleRadius,
+            },
+            map: map,
+          });
+
+          const infoWindow = new google.maps.InfoWindow({
+            content: `<strong>${project.country}</strong><br>Projects: ${project.projects}<br>Status: ${project.status}`,
+          });
+
+          marker.addListener("click", () => {
+            // Close the current InfoWindow before opening a new one
+            if (currentInfoWindow) {
+              currentInfoWindow.close();
+            }
+
+            infoWindow.open(map, marker);
+            currentInfoWindow = infoWindow;
+          });
+        });
+      });
+    </script>
   </body>
 </html>
